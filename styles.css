@@ -1,5 +1,5 @@
 body {
-            margin: 0;
+            margin: 30px;
             background-color: black;
             display: flex;
             justify-content: center;
@@ -9,7 +9,7 @@ body {
 
         #reloj {
             font-family: Arial, sans-serif;
-            font-size: 300px;
+            font-size: 100%;
             color: white;
             letter-spacing: 5px;
             font-weight: bold;
