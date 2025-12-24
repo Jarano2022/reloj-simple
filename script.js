@@ -52,7 +52,7 @@ setInterval(actualizarReloj, 1000);
 actualizarReloj();
 
 document.addEventListener('keydown', function(event) {
-  if (event.key === 'space') {
+  if (event.key === ' ') {
   const fecha = document.getElementById('fecha').style.display;
   if (fecha === 'none') {
     document.getElementById('fecha').style.display = 'block';
