@@ -53,6 +53,7 @@ body {
   padding: 50px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
+  border: 5px;
 }
 
 #tutorial p {
