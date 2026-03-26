@@ -14,12 +14,56 @@ body {
   align-items: center;
   flex-direction: column;
   font-size: 40vh;
-  color: white;
   letter-spacing: 5px;
   font-weight: bold;
 }
+
+.tecla {
+  /* Mantenemos tu estilo pero ajustamos el ancho */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30px;       /* Para que las teclas cortas no se vean aplastadas */
+  height: 30px;
+  background-color: #474747;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-right: 15px;    /* Espacio entre la tecla y el texto */
+  font-weight: bold;
+}
+
+/* Este es el truco para que no se salte de línea */
+.fila-instruccion {
+  display: flex;         /* Pone los elementos en línea */
+  align-items: center;   /* Los centra verticalmente entre sí */
+  margin-bottom: 20px;   /* Espacio entre una instrucción y la siguiente */
+}
+
 #fecha {
   font-size: 5vh;
 }
+
+#tutorial {
+  height: 83vh;
+  width: 500px;
+  background-color: white;
+  position: absolute;
+  border-radius: 30px;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+#tutorial p {
+  margin: 0;             /* Quitamos el margen que empuja el texto hacia abajo */
+  font-family: Arial, sans-serif;
+  line-height: 1.4;      /* Mejora la lectura */
+}
+
+#tutorial h1 {
+  margin-bottom: 50px;
+}
+
 
 

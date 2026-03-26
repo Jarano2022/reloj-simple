@@ -1,41 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Reloj Digital Online - Hora Exacta en Tiempo Real</title>
-    <meta name="description" content="Consulta la hora exacta y la fecha actual con nuestro reloj digital simple, minimalista y gratuito. Ideal para pantalla completa y uso diario.">
-    <meta name="keywords" content="reloj digital, hora exacta, reloj online, cronómetro, fecha actual, reloj pantalla completa">
-    <meta name="author" content="Tu Nombre o Marca">
-    <link rel="canonical" href="https://reloj-simple.vercel.app/">
+    <meta
+      name="description"
+      content="Consulta la hora exacta y la fecha actual con nuestro reloj digital simple, minimalista y gratuito. Ideal para pantalla completa y uso diario."
+    />
+    <meta
+      name="keywords"
+      content="reloj digital, hora exacta, reloj online, cronómetro, fecha actual, reloj pantalla completa"
+    />
+    <meta name="author" content="Jarano" />
+    <link rel="canonical" href="https://reloj-simple.vercel.app/" />
 
-    <meta property="og:title" content="Reloj Digital Online - Simple y Preciso">
-    <meta property="og:description" content="Un reloj digital minimalista que muestra la hora y fecha exacta en tiempo real.">
-    <meta property="og:image" content="https://reloj-simple.vercel.app/screenshot.png"> <meta property="og:url" content="https://reloj-simple.vercel.app/">
-    <meta property="og:type" content="website">
+    <meta
+      property="og:title"
+      content="Reloj Digital Online - Simple y Preciso"
+    />
+    <meta
+      property="og:description"
+      content="Un reloj digital minimalista que muestra la hora y fecha exacta en tiempo real."
+    />
+    <meta
+      property="og:image"
+      content="https://reloj-simple.vercel.app/screenshot.png"
+    />
+    <meta property="og:url" content="https://reloj-simple.vercel.app/" />
+    <meta property="og:type" content="website" />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Reloj Digital Online">
-    <meta name="twitter:description" content="La forma más sencilla de ver la hora exacta desde cualquier dispositivo.">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Reloj Digital Online" />
+    <meta
+      name="twitter:description"
+      content="La forma más sencilla de ver la hora exacta desde cualquier dispositivo."
+    />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Reloj Simple",
-      "url": "https://reloj-simple.vercel.app/",
-      "description": "Una aplicación web sencilla para visualizar la hora y fecha actual en formato digital.",
-      "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "All"
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Reloj Simple",
+        "url": "https://reloj-simple.vercel.app/",
+        "description": "Una aplicación web sencilla para visualizar la hora y fecha actual en formato digital.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All"
+      }
     </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="a">
       <div id="reloj">00:00:00</div>
       <div id="fecha"></div>
+    </div>
+    <div id="tutorial">
+      <div style="display: flex; flex-direction: row-reverse">
+        <button
+          onclick="document.getElementById('tutorial').style.display = 'none'"
+          style="
+            background: transparent;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            font-weight: bold;
+          "
+        >
+          X
+        </button>
+      </div>
+      <h1>Tutorial</h1>
+
+      <div class="fila-instruccion">
+        <span class="tecla">Espació</span>
+        <p>Púlsalo para ocultar/mostrar la fecha</p>
+      </div>
+
+      <div class="fila-instruccion">
+        <span class="tecla">C</span>
+        <p>
+          Cambiar idioma (castellano, catalan, Valenciano, Eusquera, portugues,
+          english, aleman, Italiano)
+        </p>
+      </div>
+      <div class="fila-instruccion">
+        <span class="tecla">G</span>
+        <p>Canviar modo (oscuro/claro)</p>
+      </div>
     </div>
 
     <script src="script.js"></script>
