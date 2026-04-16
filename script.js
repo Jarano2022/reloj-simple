@@ -47,7 +47,7 @@ function actualizarRelojYFecha() {
         tutorial.style.display = config.tutorialVisible ? "block" : "none";
         tutorial.style.borderColor = config.esModoOscuro ? "rgba(255, 255, 255, 0.8)" : "rgba(0, 0, 0, 0.8)";
         // Invertimos el color del botón X para que sea visible
-        tutorial.querySelector("button").style.color = config.esModoOscuro ? "white" : "black";
+        tutorial.querySelector("button").style.color = config.esModoOscuro ? "black" : "white";
     }
 
     // --- RELOJ ---

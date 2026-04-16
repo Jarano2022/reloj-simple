@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Reloj Digital Online - Hora Exacta en Tiempo Real</title>
-    <meta name="description" content="Consulta la hora exacta y la fecha actual con nuestro reloj digital simple, minimalista y gratuito." />
-    <meta name="author" content="Jarano" />
-    <link rel="canonical" href="https://reloj-simple.vercel.app/" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <title>Reloj Digital Online - Hora Exacta en Tiempo Real</title>
+  <meta name="description"
+    content="Consulta la hora exacta y la fecha actual con nuestro reloj digital simple, minimalista y gratuito." />
+  <meta name="author" content="Jarano" />
+  <link rel="canonical" href="https://reloj-simple.vercel.app/" />
 
-  <body>
-    <div class="a">
-      <div id="reloj">00:00:00</div>
-      <div id="fecha"></div>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="a">
+    <div id="reloj">00:00:00</div>
+    <div id="fecha"></div>
+  </div>
+
+  <div id="tutorial">
+    <div style="display: flex; flex-direction: row-reverse">
+      <button id="btnCerrarTutorial" aria-label="Cerrar tutorial">
+        X
+      </button>
     </div>
 
-    <div id="tutorial">
-      <div style="display: flex; flex-direction: row-reverse">
-        <button id="btnCerrarTutorial" aria-label="Cerrar tutorial">
-          X
-        </button>
-      </div>
-      
-      <h1>Controles</h1>
+    <h1>Controles</h1>
 
-      <div class="fila-instruccion">
-        <span class="tecla">Espacio</span>
-        <p>Mostrar / Ocultar la fecha</p>
-      </div>
-
-      <div class="fila-instruccion">
-        <span class="tecla">C</span>
-        <p>Cambiar idioma (ES, CA, EU, PT, EN, IT, DE)</p>
-      </div>
-
-      <div class="fila-instruccion">
-        <span class="tecla">G</span>
-        <p>Cambiar tema (Oscuro / Claro)</p>
-      </div>
-
-      <div class="fila-instruccion">
-        <span class="tecla">F</span>
-        <p>Pantalla completa</p>
-      </div>
+    <div class="fila-instruccion">
+      <span class="tecla">Espacio</span>
+      <p>Mostrar / Ocultar la fecha</p>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="fila-instruccion">
+      <span class="tecla">C</span>
+      <p>Cambiar idioma (castellano, catalan, Valenciano, Eusquera, portugues, english, aleman, Italiano)</p>
+    </div>
+
+    <div class="fila-instruccion">
+      <span class="tecla">G</span>
+      <p>Cambiar tema (Oscuro / Claro)</p>
+    </div>
+
+    <div class="fila-instruccion">
+      <span class="tecla">F</span>
+      <p>Pantalla completa</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
