@@ -23,21 +23,26 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-width: 30px;       /* Para que las teclas cortas no se vean aplastadas */
+  min-width: 30px;
+  /* Para que las teclas cortas no se vean aplastadas */
   height: 30px;
   background-color: #474747;
   color: white;
   border-radius: 8px;
   padding: 5px 10px;
-  margin-right: 15px;    /* Espacio entre la tecla y el texto */
+  margin-right: 15px;
+  /* Espacio entre la tecla y el texto */
   font-weight: bold;
 }
 
 /* Este es el truco para que no se salte de línea */
 .fila-instruccion {
-  display: flex;         /* Pone los elementos en línea */
-  align-items: center;   /* Los centra verticalmente entre sí */
-  margin-bottom: 20px;   /* Espacio entre una instrucción y la siguiente */
+  display: flex;
+  /* Pone los elementos en línea */
+  align-items: center;
+  /* Los centra verticalmente entre sí */
+  margin-bottom: 20px;
+  /* Espacio entre una instrucción y la siguiente */
 }
 
 #fecha {
@@ -57,14 +62,21 @@ body {
 }
 
 #tutorial p {
-  margin: 0;             /* Quitamos el margen que empuja el texto hacia abajo */
+  margin: 0;
+  /* Quitamos el margen que empuja el texto hacia abajo */
   font-family: Arial, sans-serif;
-  line-height: 1.4;      /* Mejora la lectura */
+  line-height: 1.4;
+  /* Mejora la lectura */
 }
 
 #tutorial h1 {
   margin-bottom: 50px;
 }
 
-
-
+#btnCerrarTutorial {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;sdsd
+  font-weight: bold;
+}
